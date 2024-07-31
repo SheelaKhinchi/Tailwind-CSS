@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doccure Pharmacy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="bg-white">
+   <!-- Header Section -->
+<header class="header">
+    <div class="w-full flex flex-col items-center justify-center">
+        <div class="top-banner w-full flex items-center justify-around p-2.5 bg-blue-100 text-sm text-gray-800">
+            <p>Special offer! Get -20% off for first order with minimum $200.00 in cart.</p>
+            <div class="banner-right flex items-center">
+                <span class="language-currency mr-2.5">English | USD</span>
+                <button class="sign-btn bg-yellow-400 text-gray-800 px-2.5 py-1 border-none rounded cursor-pointer flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Sign In / Sign Up
+                </button>
+            </div>
+        </div>
+        <div class="header-main w-full flex flex-col md:flex-row items-center justify-center p-5 bg-white border-b border-gray-300 gap-6">
+            <img src="https://doccure.dreamstechnologies.com/react/template/e196fae05467bf1c6a3b.png" alt="Doccure Logo" class="logo w-25 h-10 mb-4 md:mb-0">
+            <div class="search-container w-full flex flex-col md:flex-row items-center max-w-lg mx-5">
+                <input type="text" placeholder="Enter Pincode" class="pincode-input p-2.5 mb-2 md:mb-0 md:mr-1.25 border border-gray-300 rounded w-full md:w-auto">
+                <input type="text" placeholder="Search for medicines, health products and more" class="search-input p-2.5 mb-2 md:mb-0 md:mr-1.25 border border-gray-300 rounded w-full md:flex-grow">
+                <button class="search-btn bg-blue-600 text-white px-5 py-2.5 border-none rounded cursor-pointer w-full md:w-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21l2-2 8-8-8-8-2-2M7 7l-2 2m0 0l-2-2m2 2l2-2m0 0l2-2m2 2l2 2m-2-2l-2 2m2-2l-2 2m2-2l2 2m-2-2l2 2m-2-2l2 2m2-2l2 2m-2-2l2 2m-2-2l2 2" />
+                    </svg>
+                </button>
+            </div>
+            <div class="header-right flex items-center">
+                <div class="shopping-cart flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="cart-icon h-6 w-6 mr-1.25" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.343 3.444A5 5 0 0010.5 10h7.172a5 5 0 004.985-4.437L21 3H3z" />
+                    </svg>
+                    <span>Shopping cart</span>
+                    <span class="ml-2 text-red-500">(2)</span>
+                    <span class="ml-2">$57.00</span>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-menu w-full bg-gray-200 py-2.5">
+            <ul class="flex justify-center m-0 p-0 list-none">
+                <li class="mx-2.5">
+                    <a href="#" class="text-gray-800 p-2.5 rounded hover:bg-gray-300">Browse Categories</a>
+                </li>
+                <li class="mx-2.5">
+                    <a href="#" class="text-gray-800 p-2.5 rounded hover:bg-gray-300">Home</a>
+                </li>
+                <li class="mx-2.5">
+                    <a href="#" class="text-gray-800 p-2.5 rounded hover:bg-gray-300">Doctors</a>
+                </li>
+                <li class="mx-2.5">
+                    <a href="#" class="text-gray-800 p-2.5 rounded hover:bg-gray-300">Patients</a>
+                </li>
+                <li class="mx-2.5">
+                    <a href="#" class="text-gray-800 p-2.5 rounded hover:bg-gray-300">Pharmacy</a>
+                </li>
+                <li class="mx-2.5">
+                    <a href="#" class="text-gray-800 p-2.5 rounded hover:bg-gray-300">Pages</a>
+                </li>
+                <li class="mx-2.5">
+                    <a href="#" class="text-gray-800 p-2.5 rounded hover:bg-gray-300">Blog</a>
+                </li>
+                <li class="mx-2.5">
+                    <a href="#" class="text-gray-800 p-2.5 rounded hover:bg-gray-300">Admin</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+ <!-- Hero Section -->
+ <section class="hero bg-blue-900 text-white flex justify-center items-center p-5">
+    <div class="hero-inner flex items-center justify-between max-w-screen-xl w-full">
+        <div class="hero-content flex-1 p-5">
+            <h1 class="text-3xl mb-2 leading-tight">From the<br> Leading Online<br>Pharmacy</h1>
+            <h2 class="text-lg mb-5 text-yellow-400"> & Healthcare Platform Company</h2>
+            <p class="text-lg mb-5">Essentials Nutrition & Supplements from all over the suppliers around the World</p>
+            <button class="hero-btn bg-white text-blue-900 px-5 py-2.5 border-none rounded cursor-pointer">Shop Now</button>
+        </div>
+        <div class="hero-image flex-1 flex justify-center items-center">
+            <img src="https://doccure.dreamstechnologies.com/react/template/9119d8e478c7549ab6b1.png" alt="Hero Image" class="max-w-full h-auto">
+        </div>
+    </div>
+</section>
+
+
+<!-- Welcome Banner Section -->
+<div class="welcome-banner bg-cyan-100 flex justify-center items-center p-5 gap-8">
+    <div class="welcome-content flex items-center">
+        <img src="https://doccure.dreamstechnologies.com/react/template/6883a67ccd19ea1a94d7.png" alt="Doccure Logo" class="welcome-logo w-12 h-12 mr-5">
+        <div class="welcome-text">
+            <h2 class="text-teal-700 m-0">Welcome to Doccure</h2>
+            <p class="text-teal-700 mt-1 mb-0">Download the app get free medicine & 50% off on your first order</p>
+        </div>
+    </div>
+    <button class="download-app-btn bg-indigo-600 text-white border-none px-5 py-2.5 rounded cursor-pointer">Download App</button>
+</div>
+
+
+<!-- Promo Section Wrapper -->
+<div class="flex justify-center w-full">
+    <section class="flex justify-center gap-5 p-5 max-w-6xl w-full">
+        <div class="flex items-center p-5 rounded-lg shadow-md max-w-xs w-full bg-red-100">
+            <div class="flex justify-between items-center w-full">
+                <div class="flex-1 mr-3 text-left">
+                    <h3 class="my-2 text-lg">10% Cashback on Dietary Supplements</h3>
+                    <p class="my-1 text-sm text-gray-600">Code: CARE12</p>
+                    <button class="py-2 px-4 text-white rounded bg-red-700 cursor-pointer">Shop Now</button>
+                </div>
+                <img src="https://doccure.dreamstechnologies.com/react/template/fb0e87ab43617eead09a.png" alt="Vitamin B7" class="w-24 h-24 ml-2">
+            </div>
+        </div>
+        <div class="flex items-center p-5 rounded-lg shadow-md max-w-xs w-full bg-blue-100">
+            <div class="flex justify-between items-center w-full">
+                <div class="flex-1 mr-3 text-left">
+                    <h3 class="my-2 text-lg">Say yes to New Throat Freshner</h3>
+                    <p class="my-1 text-sm text-gray-600">Refresh your day the fruity way</p>
+                    <button class="py-2 px-4 text-white rounded bg-blue-700 cursor-pointer">Shop Now</button>
+                </div>
+                <img src="https://doccure.dreamstechnologies.com/react/template/0621b9661957ddc1d9ad.png" alt="Throat Freshner" class="w-24 h-24 ml-2">
+            </div>
+        </div>
+        <div class="flex items-center p-5 rounded-lg shadow-md max-w-xs w-full bg-purple-100">
+            <div class="flex justify-between items-center w-full">
+                <div class="flex-1 mr-3 text-left">
+                    <h3 class="my-2 text-lg">Get a Product Worth 1000 in a Pack</h3>
+                    <p class="my-1 text-sm text-gray-600">Code: CARE12</p>
+                    <button class="py-2 px-4 text-white rounded bg-purple-700 cursor-pointer">Shop Now</button>
+                </div>
+                <img src="https://doccure.dreamstechnologies.com/react/template/a0ca4f98c611772f465b.png" alt="Product Pack" class="w-24 h-24 ml-2">
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!-- Deals Section -->
+<section class="bg-white p-5 rounded-lg shadow-lg max-w-4xl mx-auto my-5 text-center">
+    <div class="flex justify-between items-center mb-5">
+        <h2 class="m-0 text-left">Great deals on top picks</h2>
+        <a href="#" class="text-blue-500 hover:underline m-0 text-right">View All →</a>
+    </div>
+    <div class="flex gap-2 justify-center flex-wrap">
+        <div class="bg-white p-2 shadow-md rounded w-24 text-center my-2">
+            <img src="https://doccure.dreamstechnologies.com/react/template/c4e05438cec85276448f.png" alt="Deal 1" class="w-12 h-auto mx-auto rounded-md">
+            <p>Diabetes</p>
+        </div>
+        <div class="bg-white p-2 shadow-md rounded w-24 text-center my-2">
+            <img src="https://doccure.dreamstechnologies.com/react/template/16e1212bbdb37c234214.png" alt="Deal 2" class="w-12 h-auto mx-auto rounded-md">
+            <p>Cardiac Care</p>
+        </div>
+        <div class="bg-white p-2 shadow-md rounded w-24 text-center my-2">
+            <img src="https://doccure.dreamstechnologies.com/react/template/68b2849ecebb110dfe8c.png" alt="Deal 3" class="w-12 h-auto mx-auto rounded-md">
+            <p>Stomach Care</p>
+        </div>
+        <div class="bg-white p-2 shadow-md rounded w-24 text-center my-2">
+            <img src="https://doccure.dreamstechnologies.com/react/template/ad26f3d80ff99d90b229.png" alt="Deal 4" class="w-12 h-auto mx-auto rounded-md">
+            <p>Ayurvedic</p>
+        </div>
+        <div class="bg-white p-2 shadow-md rounded w-24 text-center my-2">
+            <img src="https://doccure.dreamstechnologies.com/react/template/e57dd880931d9239e87b.png" alt="Deal 5" class="w-12 h-auto mx-auto rounded-md">
+            <p>Homeopathy</p>
+        </div>
+        <div class="bg-white p-2 shadow-md rounded w-24 text-center my-2">
+            <img src="https://doccure.dreamstechnologies.com/react/template/f9ceba383807880ac3fb.png" alt="Deal 6" class="w-12 h-auto mx-auto rounded-md">
+            <p>Fitness</p>
+        </div>
+        <div class="bg-white p-2 shadow-md rounded w-24 text-center my-2">
+            <img src="https://doccure.dreamstechnologies.com/react/template/6359c0baec9ad6d77d16.png" alt="Deal 7" class="w-12 h-auto mx-auto rounded-md">
+            <p>Mom & Baby</p>
+        </div>
+        <div class="bg-white p-2 shadow-md rounded w-24 text-center my-2">
+            <img src="https://doccure.dreamstechnologies.com/react/template/ed433575d2b0e008334b.png" alt="Deal 8" class="w-12 h-auto mx-auto rounded-md">
+            <p>Devices</p>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Categories Section -->
+  <section class="bg-white p-5 rounded-lg shadow-lg max-w-7xl mx-auto my-5 text-center">
+    <h2 class="mb-5 text-left">Shop Popular Categories</h2>
+    <!-- Container for categories -->
+    <div class="flex flex-wrap justify-between">
+        <!-- First Line of Categories -->
+        <div class="flex w-full mb-2">
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/05f3002bccd9138e0810.png" alt="Category 1" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Ayush</h1>
+                <p class="text-base">400 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/da7bb9d12bfe5805a4a6.png" alt="Category 2" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Covid Essentials</h1>
+                <p class="text-base">924 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/2d52d429705b5e11c2b1.png" alt="Category 3" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Devices</h1>
+                <p class="text-base">450 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/f0b0ff23fd8eb5b2010d.png" alt="Category 4" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Glucometers</h1>
+                <p class="text-base">580 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/ffd7f499df31c85d6a6b.png" alt="Category 5" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Eye Glasses</h1>
+                <p class="text-base">620 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/021547738a2dea034be6.png" alt="Category 6" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Weight</h1>
+                <p class="text-base">740 Products</p>
+            </div>
+        </div>
+        <!-- Second Line of Categories -->
+        <div class="flex w-full">
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/4d9b1291f1c689f73be1.png" alt="Category 7" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Women's Care</h1>
+                <p class="text-base">810 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/f8847266411b142a9b22.png" alt="Category 8" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Baby Care</h1>
+                <p class="text-base">680 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/7a79468ecc90a77515d9.png" alt="Category 9" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Home & Health</h1>
+                <p class="text-base">440 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/fa457a3ac06e12776872.png" alt="Category 10" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Sexual Wellness</h1>
+                <p class="text-base">270 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/2e49cc916d5c986311e7.png" alt="Category 11" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Hands & Feet</h1>
+                <p class="text-base">360 Products</p>
+            </div>
+            <div class="bg-white p-2 shadow-md rounded w-1/6 text-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/7c792aed9c5ccd5d846a.png" alt="Category 12" class="w-20 h-auto mx-auto rounded-md">
+                <h1 class="text-base">Oral Care</h1>
+                <p class="text-base">520 Products</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="flex gap-2 p-2 justify-center">
+    <div class="flex items-center text-white p-2 shadow rounded relative max-w-sm w-full bg-blue-600">
+        <div class="flex-1 text-left">
+            <h1 class="text-xl mb-1">Cash On delivery<br> Available</h1>
+            <p class="text-base mb-2">Order Now, Pay Later</p>
+        </div>
+        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-white text-blue-500 rounded">Order Now</button>
+    </div>
+    <div class="flex items-center text-white p-2 shadow rounded relative max-w-sm w-full bg-purple-500">
+        <div class="flex-1 text-left">
+            <h1 class="text-xl mb-1">Sale of the Month</h1>
+            <p class="text-base mb-2">Offer Prices in all medicines</p>
+        </div>
+        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-white text-purple-800 rounded">View Medicines</button>
+    </div>
+</section>
+
+<section class="best-weekly-products py-5 bg-gray-100 flex flex-col items-center">
+    <h2 class="text-2xl mb-5 text-left w-full max-w-screen-lg">Best Weekly Selling Products</h2>
+    <div class="products-container flex justify-center gap-4 flex-nowrap w-full max-w-screen-lg pb-2">
+        <div class="product-card bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform transform hover:-translate-y-1 flex-shrink-0 w-36">
+            <img src="https://doccure.dreamstechnologies.com/react/template/bac6905fb28a640a3f9a.png" alt="Embryolisse" class="w-full h-32 object-cover">
+            <div class="product-info p-2 text-center">
+                <p class="category text-sm text-blue-600 mb-1">Women's Care</p>
+                <h3 class="text-base mb-2 text-gray-800">Embryolisse</h3>
+                <p class="delivery text-sm text-gray-600 mb-2">Delivery: <strong>Tomorrow</strong></p>
+                <p class="price text-base text-black mb-2">$200 <span class="original-price text-gray-500 line-through ml-2">$300</span></p>
+                <div class="cart-options flex justify-center items-center gap-1">
+                    <button class="bg-gray-300 border-none px-2 py-1 cursor-pointer">-</button>
+                    <span>10</span>
+                    <button class="bg-gray-300 border-none px-2 py-1 cursor-pointer">+</button>
+                    <button class="add-to-cart bg-green-600 text-white border-none px-2 py-1 cursor-pointer">&#10004;</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform transform hover:-translate-y-1 flex-shrink-0 w-36">
+            <img src="https://doccure.dreamstechnologies.com/react/template/99bd624d0c4897913092.png" alt="Berocca" class="w-full h-32 object-cover">
+            <div class="product-info p-2 text-center">
+                <p class="category text-sm text-blue-600 mb-1">Oral Care</p>
+                <h3 class="text-base mb-2 text-gray-800">Berocca</h3>
+                <p class="delivery text-sm text-gray-600 mb-2">Delivery: <strong>2 days</strong></p>
+                <p class="price text-base text-black mb-2">$150 <span class="original-price text-gray-500 line-through ml-2">$190</span></p>
+                <div class="cart-options flex justify-center items-center gap-1">
+                    <button class="bg-gray-300 border-none px-2 py-1 cursor-pointer">-</button>
+                    <span>10</span>
+                    <button class="bg-gray-300 border-none px-2 py-1 cursor-pointer">+</button>
+                    <button class="add-to-cart bg-green-600 text-white border-none px-2 py-1 cursor-pointer">&#128722;</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform transform hover:-translate-y-1 flex-shrink-0 w-36">
+            <img src="https://doccure.dreamstechnologies.com/react/template/8300d12d60b61a5b0f85.png" alt="Acteane" class="w-full h-32 object-cover">
+            <div class="product-info p-2 text-center">
+                <p class="category text-sm text-blue-600 mb-1">Home & Health</p>
+                <h3 class="text-base mb-2 text-gray-800">Acteane</h3>
+                <p class="delivery text-sm text-gray-600 mb-2">Delivery: <strong>1 day</strong></p>
+                <p class="price text-base text-black mb-2">$250 <span class="original-price text-gray-500 line-through ml-2">$350</span></p>
+                <div class="cart-options flex justify-center items-center gap-1">
+                    <button class="bg-gray-300 border-none px-2 py-1 cursor-pointer">-</button>
+                    <span>10</span>
+                    <button class="bg-gray-300 border-none px-2 py-1 cursor-pointer">+</button>
+                    <button class="add-to-cart bg-green-600 text-white border-none px-2 py-1 cursor-pointer">&#128722;</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-card bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform transform hover:-translate-y-1 flex-shrink-0 w-36">
+            <img src="https://doccure.dreamstechnologies.com/react/template/7218fffd93fbe856eaa3.png" alt="Lactoferrin Plus SB" class="w-full h-32 object-cover">
+            <div class="product-info p-2 text-center">
+                <p class="category text-sm text-blue-600 mb-1">Home & Health</p>
+                <h3 class="text-base mb-2 text-gray-800">Lactoferrin Plus SB</h3>
+                <p class="delivery text-sm text-gray-600 mb-2">Delivery: <strong>4 days</strong></p>
+                <p class="price text-base text-black mb-2">$279 <span class="original-price text-gray-500 line-through ml-2">$300</span></p>
+                <div class="cart-options flex justify-center items-center gap-1">
+                    <button class="bg-gray-300 border-none px-2 py-1 cursor-pointer">-</button>
+                    <span>10</span>
+                    <button class="bg-gray-300 border-none px-2 py-1 cursor-pointer">+</button>
+                    <button class="add-to-cart bg-green-600 text-white border-none px-2 py-1 cursor-pointer">&#128722;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="trusted-medical-store flex justify-center items-center py-5 bg-gray-100 max-w-screen-xl mx-auto">
+    <div class="images w-1/2 flex justify-start">
+        <img src="https://doccure.dreamstechnologies.com/react/template/ce6a09dbb6f5428768e8.png" alt="Pills" class="w-full h-auto">
+    </div>
+    <div class="text-content w-1/2 pl-5">
+        <h2 class="text-2xl mb-2">100% Trusted Medical Store</h2>
+        <p class="text-sm mb-2">Healthy life.</p>
+        <p class="text-sm mb-2">At Doccure, we believe that true well-being extends beyond the prescription counter. Our commitment to your health goes beyond medications, a dedicated space designed to empower you on your journey to a healthier and happier life.</p>
+        <p class="text-sm mb-2">Every day quality products for you.</p>
+        <p class="text-sm mb-2">At Doccure, we believe that true well-being extends beyond the prescription counter. Our commitment to your health goes beyond medications, a dedicated space designed to empower you on your journey to a healthier and happier life.</p>
+        <button class="bg-blue-500 text-white border-none py-2 px-4 cursor-pointer">Shop Now</button>
+    </div>
+</div>
+
+
+
+
+<div class="container mx-auto w-11/12 max-w-screen-xl flex justify-center items-center">
+    <div class="hot-deals flex w-full justify-center box-border">
+        <!-- Offer Section -->
+        <div class="offer-section bg-purple-700 text-white p-5 rounded-lg text-center w-2/5 mr-5 flex flex-col items-center">
+            <div class="offer-header text-xl mb-2">Medical Pack</div>
+            <div class="offer-text text-lg mb-5">Get offers <br>upto 25%</div>
+            <button class="offer-button bg-red-500 text-white border-none py-2 px-5 cursor-pointer rounded mb-5">Grab Offer Now</button>
+            <div class="countdown flex flex-col items-center mb-5">
+                <div class="countdown-item text-base text-center mb-2">06 : 16 : 54 : 16<br></div>
+                <div class="countdown-item text-base text-center">Days : Hours : Minutes : Seconds<br></div>
+            </div>
+            <div class="offer-image relative">
+                <img src="https://doccure.dreamstechnologies.com/react/template/f0b1562f2d36e2ccdb78.png" alt="Doctor" class="max-w-full w-52 h-auto rounded-lg">
+                <!-- Discount Label (Optional) -->
+                <!-- <div class="discount absolute bottom-2 right-2 bg-green-500 text-white p-2 rounded-full text-base">20%</div> -->
+            </div>
+        </div>
+        
+        <!-- Product Section -->
+        <div class="product-section flex w-full overflow-x-auto">
+            <!-- Hot Deals Category -->
+            <div class="product-category w-1/3 p-2">
+                <h2 class="text-left text-xl mb-2">Hot Deals</h2>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/288c4eddcd9e5cb25ab0.png" alt="Biotin Tablets" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Home & Health</h1>
+                        <span class="text-sm">Biotin Tablets</span><br>
+                        <span class="text-sm">$200 <del>$300</del></span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/e429870aa6dfbf2370e3.png" alt="Natural Tooth Paste" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Ayush</h1>
+                        <span class="text-sm">Natural Tooth Paste</span><br>
+                        <span class="text-sm">$50</span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/977ff1100e42ddb21acf.png" alt="Baby Shampoo" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Baby Care</h1>
+                        <span class="text-sm">Baby Shampoo</span><br>
+                        <span class="text-sm">$270</span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/c096867d1e13e59cc59a.png" alt="Oval Frame Glass" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Eye Glasses</h1>
+                        <span class="text-sm">Oval Frame Glass</span><br>
+                        <span class="text-sm">$450 <del>$500</del></span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/7e6d1831bf4660e671c4.png" alt="Infrared Thermometer" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Devices</h1>
+                        <span class="text-sm">Infrared Thermometer</span><br>
+                        <span class="text-sm">$300 <del>$450</del></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Best Sellers Category -->
+            <div class="product-category w-1/3 p-2">
+                <h2 class="text-left text-xl mb-2">Best Sellers</h2>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/ee770ed5b3fc4c6efe73.png" alt="Eucerin Lotion" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Hands & Feet</h1>
+                        <span class="text-sm">Eucerin Lotion</span><br>
+                        <span class="text-sm">$150 <del>$200</del></span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/af62bb47af4ea8e0068f.png" alt="Hand Sanitizer" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Covid Essentials</h1>
+                        <span class="text-sm">Hand Sanitizer</span><br>
+                        <span class="text-sm">$100</span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/3172bea4a425f43dbe34.png" alt="Glucose Meter" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Glucometer</h1>
+                        <span class="text-sm">Glucose Meter</span><br>
+                        <span class="text-sm">$200 <del>$300</del></span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/962bbaae8b35c7210272.png" alt="Weight Machine" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Weight</h1>
+                        <span class="text-sm">Weight Machine</span><br>
+                        <span class="text-sm">$800</span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/e279c3cfe984d4e40ca2.png" alt="Papulex Gel" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Home & Health</h1>
+                        <span class="text-sm">Papulex Gel</span><br>
+                        <span class="text-sm">$70</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Top Rated Category -->
+            <div class="product-category w-1/3 p-2">
+                <h2 class="text-left text-xl mb-2">Top Rated</h2>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/f1ffb0a3ff44acb7ade2.png" alt="Electric Tooth Brush" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Oral Care</h1>
+                        <span class="text-sm">Electric Tooth Brush</span><br>
+                        <span class="text-sm">$150 <del>$250</del></span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/532dce4d94d844e0c38b.png" alt="Kid's Mask" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Devices</h1>
+                        <span class="text-sm">Sphygmomanometer</span><br>
+                        <span class="text-sm">$450 <del>$500</del></span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/ff6be7027ffbfd711838.png" alt="Oximeter" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Covid essentials</h1>
+                        <span class="text-sm">Hand Gloves</span><br>
+                        <span class="text-sm">$20</span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/c13c4d4796a8a5600803.png" alt="Pain Reliever" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Hands & Feet</h1>
+                        <span class="text-sm">Cattier Cream</span><br>
+                        <span class="text-sm">$120 <del>$150</del></span>
+                    </div>
+                </div>
+                <div class="product-item bg-gray-100 p-2 rounded-lg text-left mb-2 shadow-sm flex items-center">
+                    <img src="https://doccure.dreamstechnologies.com/react/template/9c3fbac55a12e60bda45.png" alt="Cold & Flu" class="w-15 h-15 mr-2">
+                    <div class="product-content flex flex-col">
+                        <h1 class="text-base mb-1">Women's Care</h1>
+                        <span class="text-sm">Calcium Tablets</span><br>
+                        <span class="text-sm">$170 <del>$200</del></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="featured-products-container flex flex-col items-center p-5 w-full">
+    <div class="featured-products p-5 max-w-5xl w-full box-border mb-5">
+        <h2 class="text-xl mb-5 text-left w-full">Featured Products</h2>
+        <div class="product-row flex gap-4 flex-wrap justify-center w-full box-border">
+            <div class="product-card bg-gray-100 p-3 rounded-lg text-center shadow-md max-w-[22%] flex-shrink-0">
+                <img src="https://doccure.dreamstechnologies.com/react/template/2e024611d1a16119532a.png" alt="Echinacea" class="w-36 h-36 rounded-lg mb-3 object-cover">
+                <div class="product-details text-left">
+                    <span class="category text-sm text-purple-600 mb-1 block">Home & Health</span>
+                    <span class="product-name text-base font-bold mb-1 block">Echinacea</span>
+                    <span class="quantity text-sm text-gray-600 mb-1 block">100 ml</span>
+                    <span class="price text-sm text-red-600 mb-1 block">$150 <del class="text-gray-400">$199</del></span>
+                </div>
+            </div>
+            <div class="product-card bg-gray-100 p-3 rounded-lg text-center shadow-md max-w-[22%] flex-shrink-0">
+                <img src="https://doccure.dreamstechnologies.com/react/template/c621a9d5f97481d85c67.png" alt="Diclofenac" class="w-36 h-36 rounded-lg mb-3 object-cover">
+                <div class="product-details text-left">
+                    <span class="category text-sm text-purple-600 mb-1 block">Women's Care</span>
+                    <span class="product-name text-base font-bold mb-1 block">Diclofenac</span>
+                    <span class="quantity text-sm text-gray-600 mb-1 block">50 pills</span>
+                    <span class="price text-sm text-red-600 mb-1 block">$200 <del class="text-gray-400">$300</del></span>
+                    <span class="discount text-xs bg-green-600 text-white py-1 px-2 rounded-full block">10% OFF</span>
+                </div>
+            </div>
+            <div class="product-card bg-gray-100 p-3 rounded-lg text-center shadow-md max-w-[22%] flex-shrink-0">
+                <img src="https://doccure.dreamstechnologies.com/react/template/76954d450eef521c3e8b.png" alt="Colchicine" class="w-36 h-36 rounded-lg mb-3 object-cover">
+                <div class="product-details text-left">
+                    <span class="category text-sm text-purple-600 mb-1 block">Weight</span>
+                    <span class="product-name text-base font-bold mb-1 block">Colchicine</span>
+                    <span class="quantity text-sm text-gray-600 mb-1 block">100 pills</span>
+                    <span class="price text-sm text-red-600 mb-1 block">$370 <del class="text-gray-400">$450</del></span>
+                </div>
+            </div>
+            <div class="product-card bg-gray-100 p-3 rounded-lg text-center shadow-md max-w-[22%] flex-shrink-0">
+                <img src="https://doccure.dreamstechnologies.com/react/template/869cf8db4e2d3e761714.png" alt="Clindamycin Gel" class="w-36 h-36 rounded-lg mb-3 object-cover">
+                <div class="product-details text-left">
+                    <span class="category text-sm text-purple-600 mb-1 block">Oral Care</span>
+                    <span class="product-name text-base font-bold mb-1 block">Clindamycin Gel</span>
+                    <span class="quantity text-sm text-gray-600 mb-1 block">10 g</span>
+                    <span class="price text-sm text-red-600 mb-1 block">$430 <del class="text-gray-400">$120</del></span>
+                    <span class="discount text-xs bg-green-600 text-white py-1 px-2 rounded-full block">5% OFF</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="featured-products p-5 max-w-5xl w-full box-border mb-5">
+        <div class="product-row flex gap-4 flex-wrap justify-center w-full box-border">
+            <div class="product-card bg-gray-100 p-3 rounded-lg text-center shadow-md max-w-[22%] flex-shrink-0">
+                <img src="https://doccure.dreamstechnologies.com/react/template/92bd0df93d5a28638b79.png" alt="Aspirin-C" class="w-36 h-36 rounded-lg mb-3 object-cover">
+                <div class="product-details text-left">
+                    <span class="category text-sm text-purple-600 mb-1 block">Women's Care</span>
+                    <span class="product-name text-base font-bold mb-1 block">Aspirin-C</span>
+                    <span class="quantity text-sm text-gray-600 mb-1 block">70 pills</span>
+                    <span class="price text-sm text-red-600 mb-1 block">$200 <del class="text-gray-400">$300</del></span>
+                    <span class="discount text-xs bg-green-600 text-white py-1 px-2 rounded-full block">10% OFF</span>
+                </div>
+            </div>
+            <div class="product-card bg-gray-100 p-3 rounded-lg text-center shadow-md max-w-[22%] flex-shrink-0">
+                <img src="https://doccure.dreamstechnologies.com/react/template/4717a9971cfda2e7c1c0.png" alt="L-Carnitine" class="w-36 h-36 rounded-lg mb-3 object-cover">
+                <div class="product-details text-left">
+                    <span class="category text-sm text-purple-600 mb-1 block">Home & Health</span>
+                    <span class="product-name text-base font-bold mb-1 block">L-Carnitine</span>
+                    <span class="quantity text-sm text-gray-600 mb-1 block">100 pills</span>
+                    <span class="price text-sm text-red-600 mb-1 block">$130 <del class="text-gray-400">$150</del></span>
+                </div>
+            </div>
+            <div class="product-card bg-gray-100 p-3 rounded-lg text-center shadow-md max-w-[22%] flex-shrink-0">
+                <img src="https://doccure.dreamstechnologies.com/react/template/70f67745d58810bc155d.png" alt="DyN.O Pre Workout" class="w-36 h-36 rounded-lg mb-3 object-cover">
+                <div class="product-details text-left">
+                    <span class="category text-sm text-purple-600 mb-1 block">Home & Health</span>
+                    <span class="product-name text-base font-bold mb-1 block">DyN.O Pre Workout</span>
+                    <span class="quantity text-sm text-gray-600 mb-1 block">250 kg</span>
+                    <span class="price text-sm text-red-600 mb-1 block">$230 <del class="text-gray-400">$250</del></span>
+                    <span class="discount text-xs bg-green-600 text-white py-1 px-2 rounded-full block">5% OFF</span>
+                </div>
+            </div>
+            <div class="product-card bg-gray-100 p-3 rounded-lg text-center shadow-md max-w-[22%] flex-shrink-0">
+                <img src="https://doccure.dreamstechnologies.com/react/template/91a3196970e5da4c8cbc.png" alt="Tabcin" class="w-36 h-36 rounded-lg mb-3 object-cover">
+                <div class="product-details text-left">
+                    <span class="category text-sm text-purple-600 mb-1 block">Baby Care</span>
+                    <span class="product-name text-base font-bold mb-1 block">Tabcin</span>
+                    <span class="quantity text-sm text-gray-600 mb-1 block">60 pills</span>
+                    <span class="price text-sm text-red-600 mb-1 block">$180 <del class="text-gray-400">$400</del></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-blue-800 flex justify-center py-10">
+    <div class="bg-blue-800 p-5 w-full max-w-6xl mx-auto flex justify-center">
+        <div class="flex items-center justify-center w-full">
+            <div class="flex-1 flex justify-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/c6f05368f5582908d83b.png" alt="Medical Bag" class="w-4/5 rounded-lg">
+            </div>
+            <div class="flex-1 pl-5">
+                <div class="flex flex-col space-y-5">
+                    <div class="flex items-center bg-blue-900 p-3 rounded-lg">
+                        <img src="https://doccure.dreamstechnologies.com/react/template/7b2a7a30a052105cd474.jpg" alt="Avatar" class="w-12 h-12 rounded-full mr-3">
+                        <div class="text-white">
+                            <h3 class="text-lg font-semibold">Claudia Cram</h3>
+                            <p class="text-gray-300">The Doccure has been a game-changer for me. Ordering my medications is a breeze, and the detailed information provided helps me make informed decisions about my health.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-blue-900 p-3 rounded-lg">
+                        <img src="https://doccure.dreamstechnologies.com/react/template/157dee4e5f7c4d710e3b.jpg" alt="Avatar" class="w-12 h-12 rounded-full mr-3">
+                        <div class="text-white">
+                            <h3 class="text-lg font-semibold">Andrew Morgan</h3>
+                            <p class="text-gray-300">The convenience of having my medications delivered to my doorstep is unparalleled. The Doccure security measures instill confidence in every transaction.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-blue-900 p-3 rounded-lg">
+                        <img src="https://doccure.dreamstechnologies.com/react/template/6425ce864228d652f0bb.jpg" alt="Avatar" class="w-12 h-12 rounded-full mr-3">
+                        <div class="text-white">
+                            <h3 class="text-lg font-semibold">Margaret Sara</h3>
+                            <p class="text-gray-300">As a busy professional, the Doccure efficient service has saved me countless hours. The ability to chat with a pharmacist online for quick advice is fantastic, making it so much easier to manage my health.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-blue-900 p-3 rounded-lg">
+                        <img src="https://doccure.dreamstechnologies.com/react/template/00271c46ddfcce4694d0.jpg" alt="Avatar" class="w-12 h-12 rounded-full mr-3">
+                        <div class="text-white">
+                            <h3 class="text-lg font-semibold">Kevin Stoll</h3>
+                            <p class="text-gray-300">I can't thank the Doccure enough for its user-friendly interface and quick prescription refills. The automatic reminders for medication schedules have been a lifesaver, ensuring I never miss a dose.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="py-5 max-w-6xl mx-auto">
+    <h2 class="text-left mb-5 text-2xl font-semibold">Latest News</h2>
+    <div class="flex justify-between gap-5">
+        <div class="bg-gray-100 border border-gray-300 rounded-lg overflow-hidden shadow-md w-1/3 flex flex-col">
+            <img src="https://doccure.dreamstechnologies.com/react/template/c017b082e4f3c5105703.jpg" alt="News 1" class="w-full h-auto">
+            <div class="p-4">
+                <span class="block text-sm text-gray-600">18 Nov</span>
+                <h3 class="mt-2 text-lg font-semibold text-gray-800">Revolutionizing Patient Care: The Future of Online Pharmacies</h3>
+                <p class="mt-2 text-sm text-gray-600">By Admin · 65 Comments</p>
+            </div>
+        </div>
+        <div class="bg-gray-100 border border-gray-300 rounded-lg overflow-hidden shadow-md w-1/3 flex flex-col">
+            <img src="https://doccure.dreamstechnologies.com/react/template/4f30826da24609d2d00b.jpg" alt="News 2" class="w-full h-auto">
+            <div class="p-4">
+                <span class="block text-sm text-gray-600">19 Nov</span>
+                <h3 class="mt-2 text-lg font-semibold text-gray-800">Navigating the World of Supplements: A Pharmacist's Perspective</h3>
+                <p class="mt-2 text-sm text-gray-600">By Admin · 48 Comments</p>
+            </div>
+        </div>
+        <div class="bg-gray-100 border border-gray-300 rounded-lg overflow-hidden shadow-md w-1/3 flex flex-col">
+            <img src="https://doccure.dreamstechnologies.com/react/template/a4c3a56b2303194baea4.jpg" alt="News 3" class="w-full h-auto">
+            <div class="p-4">
+                <span class="block text-sm text-gray-600">20 Nov</span>
+                <h3 class="mt-2 text-lg font-semibold text-gray-800">Behind the Counter: A Glimpse into the Day-to-Day Life of a Pharmacist</h3>
+                <p class="mt-2 text-sm text-gray-600">By Admin · 26 Comments</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-blue-700 py-5 rounded-lg shadow-md w-4/5 max-w-6xl mx-auto mb-20">
+    <div class="flex justify-between items-center bg-blue-700 p-5 rounded-lg">
+        <div class="w-1/2 flex justify-center items-center p-2">
+            <img src="https://doccure.dreamstechnologies.com/react/template/5bbb8b38521c4637ab94.png" alt="App Promotion" class="w-full rounded-lg">
+        </div>
+        <div class="w-2/5 text-white text-center p-4">
+            <h2 class="text-3xl font-bold">Working for Your Better Health.</h2>
+            <h3 class="mt-2 text-2xl font-semibold">Download the Doccure App today!</h3>
+            <p class="mt-2 text-lg">Scan the QR code to get the app now</p>
+            <div class="mt-4">
+                <img src="https://doccure.dreamstechnologies.com/react/template/2749ffdcfc7c8b75a2ea.png" alt="QR Code" class="w-24 h-24 rounded-lg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-gray-100 py-5 flex flex-col items-center">
+    <div class="w-full max-w-6xl">
+        <!-- Footer Top -->
+        <div class="pb-5 border-b border-gray-200 flex items-center">
+            <div class="flex items-center">
+                <img src="https://doccure.dreamstechnologies.com/react/template/e196fae05467bf1c6a3b.png" alt="Doccure Logo" class="w-36 mr-5">
+                <p class="text-gray-600">Doccure is one of India's most trusted pharmacies, dispensing quality medicines at reasonable prices to over 9 million happy customers</p>
+            </div>
+        </div>
+
+        <!-- Footer Middle -->
+        <div class="py-5 flex justify-between">
+            <div class="flex flex-wrap w-full gap-10">
+                <div class="flex-1 mr-5">
+                    <h3 class="text-gray-800 mb-2">Company</h3>
+                    <ul class="list-none p-0">
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">About Doccure</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Customers Speak</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">In the News</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Career</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1 mr-5">
+                    <h3 class="text-gray-800 mb-2">Shopping</h3>
+                    <ul class="list-none p-0">
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Browse by A-Z</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Browse by Manufacturers</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Health Articles</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Offers / Coupons</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1 mr-5">
+                    <h3 class="text-gray-800 mb-2">Our Policies</h3>
+                    <ul class="list-none p-0">
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Terms and Conditions</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Privacy Policy</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Fees and Payments</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Shipping and Delivery</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Return, Refund</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1 mr-5">
+                    <h3 class="text-gray-800 mb-2">Our Services</h3>
+                    <ul class="list-none p-0">
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Order Medicines</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Book Lab Tests</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Consult a Doctor</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Ayurveda Articles</a></li>
+                        <li class="mb-1"><a href="#" class="text-gray-800 hover:underline">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-gray-800 mb-2">Subscribe to Newsletter</h3>
+                    <form class="flex mt-2">
+                        <input type="email" placeholder="Enter Email Address" class="p-2 flex-1 border border-gray-300 rounded-l-md">
+                        <button type="submit" class="p-2 bg-blue-600 text-white rounded-r-md hover:bg-blue-700">Submit</button>
+                    </form>
+                    <div class="mt-3 flex gap-3">
+                        <img src="https://doccure.dreamstechnologies.com/react/template/6e016cfcc73fd0b89905.svg" alt="App Store" class="w-32">
+                        <img src="https://doccure.dreamstechnologies.com/react/template/4210d03a5a05f43447bc.svg" alt="Google Play" class="w-32">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="flex justify-between items-center pt-5 border-t border-gray-200">
+            <div class="flex gap-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/1aa59329130446a03a48.svg" alt="Paytm" class="mr-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/879f14188deecbf8f4e1.svg" alt="RuPay" class="mr-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/b3c2f7ca878bdce13b1b.svg" alt="Visa" class="mr-2">
+                <img src="https://doccure.dreamstechnologies.com/react/template/f9cc23dc1b27afaeb6c2.svg" alt="MasterCard">
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="text-gray-800 hover:text-blue-600"><i class="fab fa-facebook-f w-6 h-6"></i></a>
+                <a href="#" class="text-gray-800 hover:text-blue-400"><i class="fab fa-twitter w-6 h-6"></i></a>
+                <a href="#" class="text-gray-800 hover:text-blue-700"><i class="fab fa-linkedin-in w-6 h-6"></i></a>
+                <a href="#" class="text-gray-800 hover:text-pink-600"><i class="fab fa-instagram w-6 h-6"></i></a>
+                <a href="#" class="text-gray-800 hover:text-pink-400"><i class="fab fa-dribbble w-6 h-6"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
